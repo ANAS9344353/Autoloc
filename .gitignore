@@ -1,0 +1,88 @@
+# ============================================================
+# Python / Django
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+.venv/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+*.log
+local_settings.py
+
+# Migrations generees (a regarder selon les conventions de l'equipe)
+# Decommenter si tu veux les exclure :
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Fichiers media uploades (photos des voitures)
+backend/media/voitures/*
+!backend/media/voitures/.gitkeep
+
+# Fichiers statiques collectes
+staticfiles/
+backend/staticfiles/
+
+# ============================================================
+# Variables d'environnement (SECRETS - NE JAMAIS COMMITER !)
+# ============================================================
+.env
+*.env
+!.env.example
+
+# ============================================================
+# Node.js / Frontend (React + Vite)
+# ============================================================
+node_modules/
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# Logs npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ============================================================
+# Editeurs / IDE
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# Systeme
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================================
+# Tests / Couverture
+# ============================================================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
